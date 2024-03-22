@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Button() {
   return (
     <div className='grid grid-cols-1 gap-16'>
       <h1 className='font-bold text-4xl'>Components</h1>
