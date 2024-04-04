@@ -7,25 +7,13 @@ import {
 } from '@/app/components/Button';
 
 export const DefaultButton = () => {
-  return (
-    <NotUsingRACButton type='button' onPress={() => console.log('Pressed!')}>
-      Button
-    </NotUsingRACButton>
-  );
+  return <NotUsingRACButton href='/button'>Link Button</NotUsingRACButton>;
 };
 
 export const RACButton = () => {
-  return (
-    <UsingRACButton href='/button' onPress={() => console.log('Pressed!')}>
-      Button
-    </UsingRACButton>
-  );
+  return <UsingRACButton href='/button'>Link Button</UsingRACButton>;
 };
 
 export const UseButtonHookButton = () => {
-  return (
-    <UsingHookButton onPress={() => console.log('Pressed!')}>
-      Button
-    </UsingHookButton>
-  );
+  return <UsingHookButton href='/button'>Link Button</UsingHookButton>;
 };

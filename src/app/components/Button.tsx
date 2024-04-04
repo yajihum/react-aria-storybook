@@ -8,7 +8,7 @@ export const UsingRACButton = ({ children, ...props }: LinkProps) => {
   return (
     <Link
       {...props}
-      className='rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700 pressed:bg-blue-100'
+      className='rounded bg-blue-500 px-4 py-2 font-bold text-white data-[pressed]:bg-blue-900 hover:bg-blue-700'
     >
       {children}
     </Link>
@@ -34,7 +34,7 @@ export const UsingHookButton = ({
     <a
       {...buttonProps}
       ref={ref}
-      className='rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700'
+      className='rounded bg-blue-500 px-4 py-2 font-bold text-white data-[pressed]:bg-blue-900 hover:bg-blue-700'
     >
       {children}
     </a>
