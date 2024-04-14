@@ -12,6 +12,20 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default = {
+  args: {
+    options: [
+      { id: 1, name: 'Aardvark' },
+      { id: 2, name: 'Cat' },
+      { id: 3, name: 'Dog' },
+      { id: 4, name: 'Kangaroo' },
+      { id: 5, name: 'Panda' },
+      { id: 6, name: 'Snake' },
+      { id: 7, name: 'Tiger' },
+      { id: 8, name: 'Zebra' },
+      { id: 9, name: 'Elephant' },
+      { id: 10, name: 'Giraffe' },
+    ],
+  },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement.ownerDocument.body);
 
